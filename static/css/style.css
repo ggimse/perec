@@ -1655,12 +1655,12 @@ main footer div#paginator {
   max-width: 640px;
 }
 main footer div#next_page_left {
-  max-width: 200px;
   float: left;
+  width: 8.5em;
 }
 main footer div#next_page_right {
-  max-width: 200px;
   float: right;
+  width: 8.5em;
 }
 main div#ending_message {
   padding: 0 40px 0 40px;
