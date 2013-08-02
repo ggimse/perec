@@ -1651,10 +1651,12 @@ main footer a.button_accent:active {
   color: #ffffff;
   background-color: #000000;
 }
-main footer p#next_page_left {
+main footer div#next_page_left {
+  max-width: 200px;
   text-align: left;
 }
-main footer p#next_page_right {
+main footer div#next_page_right {
+  max-width: 200px;
   text-align: right;
 }
 main div#ending_message {
