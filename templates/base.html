@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
+<head>
+  <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
+  <script src="{{ SITEURL }}/theme/js/less-1.3.3.min.js" type="text/javascript"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <meta name="author" content="{{ AUTHOR }}">
+  <meta name="description" content="Posts and writings by {{ AUTHOR }}">
+  <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico" type="image/x-icon" />
+  {% if FEED_ALL_ATOM %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+  {% endif %}
+  {% if FEED_ALL_RSS %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+  {% endif %}
+
+  {% block head %}
+  {% endblock %}
+
+  <title>
+    {% block title %}{{ SITENAME }}{% endblock %}
+  </title>
+
+  {% include "modules/analytics.html" %}
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+        <a href="{{ SITEURL }}">
+        {% if USER_LOGO_URL %}
+        <img src="{{ USER_LOGO_URL }}" alt="logo">
+        {% else %}
+        <img src="{{ SITEURL }}/theme/images/logo.jpg" alt="logo">
+        {% endif %}
+      </a>
+      <h2><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h2>
+      <p>{{ TAGLINE }}</p>
+      <div id="social_links">
+	<ul id="social_list">
+	{% for name, link in SOCIAL %}
+        <li><a href="{{ link }}" target="_blank"><i class="icon-{{ name }} icon-2x"></i></a></li>
+        {% endfor %}
+	{% if FEED_ALL_ATOM %}
+        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="icon-rss icon-2x"></i></a></li>
+        {% endif %}
+	{% if FEED_ALL_RSS %}
+        <li> <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="RSS FEED"><i class="icon-rss icon-2x"></a></li>
+        {% endif %}
+	</ul>
+      </div>
+      <ul>
+        {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
+        <li><a {% if p == page %}class="active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}{% endif %}
+        {% if DISPLAY_CATEGORIES_ON_MENU -%}
+        {% for cat, null in categories %}
+        <li><a {% if cat == category %}class="active"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+        {% endfor %}{% endif %}
+        {% for name, link in LINKS %}
+        <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+        {% endfor %}
+       </ul>
+    </div>
+  </aside>
+
+  <main>
+     <header>
+      {% block header %}
+          <p>Text and Hubris</p>
+      {% endblock header %}
+    </header>
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+	
+      {% block footer %}
+      {% endblock %}
+    </footer>
+
+    <div id="ending_message">
+      <p>&copy Geoffrey Gimse. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme adapted from pelican-svbhack available on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>{% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>{% endif %}.</p>
+    </div>
+  </main>
+  {% include "modules/idl.html" %}
+</body>
+</html>

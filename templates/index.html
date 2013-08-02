@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+{% for article in articles_page.object_list %}
+<article>
+  <div id="article_title">
+    <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+  </div>
+  <div id="article_text">
+    {{ article.summary }}
+  </div>
+</article>
+{% if not loop.last %}
+<hr />
+{% endif %}
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+{% include "modules/pagination.html" %}
+{% endblock %}
