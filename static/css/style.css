@@ -1608,7 +1608,7 @@ main article div#article_more {
   text-align: right;
 }
 main article div#article_more a.button_more {
-  padding: 10px;
+  padding: 2px 10px;
   border: 2px solid #000000;
   border-radius: 20px;
   -moz-border-radius: 20px;
@@ -1634,7 +1634,7 @@ main footer {
   padding: 40px;
 }
 main footer a.button_accent {
-  padding: 10px;
+  padding: 2px 10px;
   border: 2px solid #000000;
   border-radius: 20px;
   -moz-border-radius: 20px;
