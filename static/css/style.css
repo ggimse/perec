@@ -1604,6 +1604,9 @@ main article div#article_meta {
   font-size: 0.625em;
   color: #999999;
 }
+main article div#article_more {
+  text-align: right;
+}
 main article div#article_more a.button_more {
   padding: 10px;
   border: 2px solid #000000;
