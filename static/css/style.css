@@ -1651,6 +1651,12 @@ main footer a.button_accent:active {
   color: #ffffff;
   background-color: #000000;
 }
+main footer p#next_page_left {
+  text-align: left;
+}
+main footer p#next_page_right {
+  text-align: right;
+}
 main div#ending_message {
   padding: 0 40px 0 40px;
   font-color: #eeeeee;
