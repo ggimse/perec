@@ -1651,13 +1651,16 @@ main footer a.button_accent:active {
   color: #ffffff;
   background-color: #000000;
 }
-main footer span#next_page_left {
-  max-width: 200px;
-  text-align: left;
+main footer div#paginator {
+  max-width: 640px;
 }
-main footer span#next_page_right {
+main footer div#next_page_left {
   max-width: 200px;
-  text-align: right;
+  float: left;
+}
+main footer div#next_page_right {
+  max-width: 200px;
+  float: right;
 }
 main div#ending_message {
   padding: 0 40px 0 40px;
