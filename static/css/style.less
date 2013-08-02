@@ -137,6 +137,23 @@ main {
         font-size: 0.625em;
         text-decoration: none;
       }
+      
+     a.button_more {
+       padding: 10px;
+      border: 2px solid @accent;
+      .border-radius(20px);
+      text-transform: uppercase;
+      color: @accent;
+      font-size: .75em;
+      &:hover {
+        color: @white;
+        background-color: @accent;
+      }
+      &:active {
+        color: @white;
+        background-color: @accent;
+      }
+     }
 
       code {
         margin: 2px;
