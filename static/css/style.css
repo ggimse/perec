@@ -1575,24 +1575,6 @@ main article div#article_text a.footnote-ref {
   font-size: 0.625em;
   text-decoration: none;
 }
-main article div#article_text a.button_more {
-  padding: 10px;
-  border: 2px solid #000000;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  text-transform: uppercase;
-  color: #000000;
-  font-size: .75em;
-}
-main article div#article_text a.button_more:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-main article div#article_text a.button_more:active {
-  color: #ffffff;
-  background-color: #000000;
-}
 main article div#article_text code {
   margin: 2px;
   padding: 0;
@@ -1621,6 +1603,24 @@ main article div#article_text blockquote {
 main article div#article_meta {
   font-size: 0.625em;
   color: #999999;
+}
+main article div#article_more a.button_more {
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: .75em;
+}
+main article div#article_more a.button_more:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+main article div#article_more a.button_more:active {
+  color: #ffffff;
+  background-color: #000000;
 }
 main article div.footnote {
   font-size: 0.625em;
