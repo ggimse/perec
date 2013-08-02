@@ -1620,7 +1620,7 @@ main footer a.button_accent {
   -webkit-border-radius: 20px;
   text-transform: uppercase;
   color: #000000;
-  font-size: 1.125em;
+  font-size: .75em;
 }
 main footer a.button_accent:hover {
   color: #ffffff;
