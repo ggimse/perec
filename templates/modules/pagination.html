@@ -1,17 +1,17 @@
 {% if DEFAULT_PAGINATION %}
 {% if articles_page.has_next() %}
-	<div id="next_page_left">
+	<span id="next_page_left">
 		<a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html" class="button_accent"><i class="icon-arrow-left"></i> Older Posts</a>
-	</div>
+	</span>
 {% endif %}
 
 {% if articles_page.has_previous() %}
-	<div id="next_page_right">
+	<span id="next_page_right">
 		{% if articles_page.previous_page_number() == 1 %}
 		<a href="{{ SITEURL }}/{{ page_name }}.html" class="button_accent">Newer Posts <i class="icon-arrow-right"></i></a>
 		{% else %}
 		<a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html" class="button_accent">Newer Posts <i class="icon-arrow-right"></i></a>
 		{% endif %}
-	</div>
+	</span>
 {% endif %}
 {% endif %}
