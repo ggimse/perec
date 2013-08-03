@@ -71,7 +71,7 @@
   <main>
      <header>
       {% block header %}
-		<p>{{ SITENAME }}
+		<p><a href="{{ SITEURL }}">{{ SITENAME }}</a>
 		{% if FEED_ALL_ATOM %}
         	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="icon-rss"></i></a></li>
         {% endif %}
