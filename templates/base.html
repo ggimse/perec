@@ -55,15 +55,16 @@
         <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
         {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
-        <li><a {% if p == page %}class="active"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+        <li><a {% if p == page %}class="nav_selected"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}{% endif %}
         {% if DISPLAY_CATEGORIES_ON_MENU -%}
         {% for cat, null in categories %}
-        <li><a {% if cat == category %}class="active"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+        <li><a {% if cat == category %}class="nav_selected"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
         {% endfor %}{% endif %}
         {% for name, link in LINKS %}
         <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
         {% endfor %}
+        <li><a {% if output_file == "archives.html" %}class="nav_selected"{% endif %} href="{{ SITEURL }}/archives.html">Archives</a></li>
        </ul>
     </div>
   </aside>

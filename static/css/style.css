@@ -1547,6 +1547,16 @@ aside div#user_meta ul li a {
   color: #4d4d4d;
   text-transform: capitalize;
 }
+aside div#user_meta ul li a.nav_selected {
+  padding: 5px 15px 5px 15px;
+  border: 3px solid #4d4d4d;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  text-transform: capitalize;
+}
 main header {
   padding: 15px 40px;
   border-top: #eeeeee 1px solid;
