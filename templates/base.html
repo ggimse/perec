@@ -46,14 +46,8 @@
       <div id="social_links">
 	<ul id="social_list">
 	{% for name, link in SOCIAL %}
-        <li><a href="{{ link }}" target="_blank"><i class="icon-{{ name }} icon-2x"></i></a></li>
+        <li><a href="{{ link }}" target="_blank"><i class="icon-{{ name }} icon-2x" rel='me'></i></a></li>
         {% endfor %}
-	{% if FEED_ALL_ATOM %}
-        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="icon-rss icon-2x"></i></a></li>
-        {% endif %}
-	{% if FEED_ALL_RSS %}
-        <li> <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="RSS FEED"><i class="icon-rss icon-2x"></a></li>
-        {% endif %}
 	</ul>
       </div>
       <ul>
@@ -77,7 +71,14 @@
   <main>
      <header>
       {% block header %}
-          <p>Text and Hubris</p>
+		<p>{{ SITENAME }}
+		{% if FEED_ALL_ATOM %}
+        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="icon-rss"></i></a></li>
+        {% endif %}
+		{% if FEED_ALL_RSS %}
+        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="RSS FEED"><i class="icon-rss"></a></li>
+        {% endif %}
+          </p>
       {% endblock header %}
     </header>
     {% block content %}
