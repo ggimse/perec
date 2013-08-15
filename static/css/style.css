@@ -1578,6 +1578,9 @@ main article div#article_text {
   line-height: 1.375em;
   font-family: 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
 }
+main article div#article_text h2 {
+  font-size: 1.4em;
+}
 main article div#article_text a {
   text-decoration: underline;
 }
@@ -1609,6 +1612,12 @@ main article div#article_text blockquote {
   padding-left: 40px;
   color: #999999;
   font-style: italic;
+}
+main article div#article_text div.align-center {
+  text-align: center;
+}
+main article div#article_text div.align-right {
+  text-align: right;
 }
 main article div#article_meta {
   font-size: 0.625em;
