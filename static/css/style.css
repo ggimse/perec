@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)";
 /*!
  *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
@@ -52,7 +53,7 @@
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: -10%;
-  font-size: 1.3333333333333333em;
+  font-size: 1.33333333em;
 }
 /* makes sure icons active on rollover in links */
 a [class^="icon-"],
@@ -63,16 +64,16 @@ a [class*=" icon-"] {
 [class^="icon-"].icon-fixed-width,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;
-  width: 1.1428571428571428em;
+  width: 1.14285714em;
   text-align: right;
-  padding-right: 0.2857142857142857em;
+  padding-right: 0.28571429em;
 }
 [class^="icon-"].icon-fixed-width.icon-large,
 [class*=" icon-"].icon-fixed-width.icon-large {
-  width: 1.4285714285714286em;
+  width: 1.42857143em;
 }
 .icons-ul {
-  margin-left: 2.142857142857143em;
+  margin-left: 2.14285714em;
   list-style-type: none;
 }
 .icons-ul > li {
@@ -80,8 +81,8 @@ a [class*=" icon-"] {
 }
 .icons-ul .icon-li {
   position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
+  left: -2.14285714em;
+  width: 2.14285714em;
   text-align: center;
   line-height: inherit;
 }
@@ -1482,7 +1483,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: #4d4d4d;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
+  font-family: 'Raleway', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
   font-size: 1.125em;
 }
 a {
@@ -1495,7 +1496,11 @@ hr {
   height: 1px;
   border: none;
 }
+aside {
+  background: url('../images/background-cover.jpg') top left no-repeat #4d4d4d;
+}
 aside div#user_meta {
+  font-family: serif;
   padding: 40px;
   text-align: center;
 }
@@ -1513,15 +1518,16 @@ aside div#user_meta div#social_links ul li {
   padding: 0px;
 }
 aside div#user_meta div#social_links ul li a {
-  color: #000000;
+  color: #ffffff;
   border: 0px;
   padding: 5px 0px;
 }
 aside div#user_meta h2 {
   margin: 15px 0 5px 0;
+  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
 }
 aside div#user_meta h1 {
-  font-family: 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
   font-size: 1.625em;
 }
 aside div#user_meta p {
@@ -1540,11 +1546,11 @@ aside div#user_meta ul li {
 }
 aside div#user_meta ul li a {
   padding: 5px 15px 5px 15px;
-  border: 3px solid #4d4d4d;
+  border: 3px solid #ffffff;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  color: #4d4d4d;
+  color: #ffffff;
   text-transform: capitalize;
 }
 aside div#user_meta ul li a.nav_selected {
@@ -1564,7 +1570,7 @@ main header {
 }
 main header p {
   margin-right: 100px;
-  font-family: 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: right;
@@ -1576,7 +1582,7 @@ main article {
 }
 main article div#article_text {
   line-height: 1.375em;
-  font-family: 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
 }
 main article div#article_text h2 {
   font-size: 1.4em;
@@ -1693,7 +1699,7 @@ main div#ending_message {
 }
 @media screen and (min-width: 1024px) {
   aside {
-    width: 25%;
+    width: 35%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -1703,24 +1709,20 @@ main div#ending_message {
   aside h2 {
     margin: 10px 0 0 0;
   }
-  aside div#user_meta {
-    max-width: 192px;
-    text-align: right;
-  }
   aside div#user_meta ul li {
     margin-bottom: 26px;
     display: block;
   }
   main {
-    width: 75%;
+    width: 65%;
     position: absolute;
     top: 0;
-    left: 25%;
+    left: 35%;
     overflow-x: hidden;
     overflow-y: hidden;
   }
   main article {
-    max-width: 800px;
+    max-width: 65%;
   }
   main header {
     border-top: 0;

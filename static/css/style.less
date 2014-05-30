@@ -1,4 +1,5 @@
 @import "../font-awesome/less/font-awesome.less";
+@import "http://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)";
 @red:  #ff0000;
 @black:  #000000;
 @white:  #ffffff;
@@ -7,8 +8,8 @@
 @dark-grey:  #4d4d4d;
 @blue:  #0e94ec;
 @accent:  @black;
-@sans: 'Lucida Grande','Lucida Sans Unicode',verdana,sans-serif;;
-@serif: 'Hoefler Text','Cambria',Georgia,'Times New Roman',Times,serif;
+@sans: 'Raleway','Lucida Grande','Lucida Sans Unicode',verdana,sans-serif;
+@serif: 'Roboto Slab','Hoefler Text','Cambria',Georgia,'Times New Roman',Times,serif;
 @mono: 'PT Mono', monospace;
 
 body {
@@ -39,7 +40,9 @@ hr {
 }
 
 aside {
+  background: url('../images/background-cover.jpg') top left no-repeat @dark-grey;
   div#user_meta {
+    font-family: serif;
     padding: 40px;
     text-align: center;
     
@@ -57,7 +60,7 @@ aside {
            padding: 0px;
            
            a {
-            color: @black;
+            color: @white;
             border: 0px;
             padding: 5px 0px;
             
@@ -68,6 +71,7 @@ aside {
 
     h2 {
       margin: 15px 0 5px 0;
+      font-family: @serif;
     }
     
     h1 {
@@ -92,9 +96,9 @@ aside {
 
         a {
           padding: 5px 15px 5px 15px;
-          border: 3px solid @dark-grey;
+          border: 3px solid @white;
           .border-radius(15px);
-          color: @dark-grey;
+          color: @white;
           text-transform: capitalize;
         }
         
@@ -271,7 +275,7 @@ main {
 
 @media screen and (min-width: 1024px) {
   aside {
-    width: 25%;
+    width: 35%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -283,9 +287,7 @@ main {
     }
 
     div#user_meta {
-      max-width: 192px;
-      text-align: right;
-
+      
       ul {
         li {
           margin-bottom: 26px;
@@ -296,15 +298,15 @@ main {
   }
 
   main {
-    width: 75%;
+    width: 65%;
     position: absolute;
     top: 0;
-    left: 25%;
+    left: 35%;
     overflow-x: hidden;
     overflow-y: hidden;
 
     article {
-      max-width: 800px; 
+      max-width: 95%; 
     }
 
     header {
