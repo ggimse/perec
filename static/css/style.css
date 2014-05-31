@@ -1497,10 +1497,13 @@ hr {
   border: none;
 }
 aside {
-  background: url('../images/background-cover.jpg') top left no-repeat #4d4d4d;
+  background: url('/theme/images/background-cover.jpg') top left no-repeat #4d4d4d;
+  color: #ffffff;
 }
 aside div#user_meta {
-  font-family: serif;
+  position: relative;
+  z-index: 600;
+  font-family: 'Raleway', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
   padding: 40px;
   text-align: center;
 }
@@ -1525,6 +1528,13 @@ aside div#user_meta div#social_links ul li a {
 aside div#user_meta h2 {
   margin: 15px 0 5px 0;
   font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+aside div#user_meta h2 a {
+  color: #ffffff;
+  text-decoration: none;
 }
 aside div#user_meta h1 {
   font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
@@ -1533,6 +1543,10 @@ aside div#user_meta h1 {
 aside div#user_meta p {
   margin: 0 0 15px 0;
   font-size: 0.75em;
+}
+aside div#user_meta p.tagline {
+  margin: 0 0 15px 0;
+  font-size: .9em;
 }
 aside div#user_meta ul {
   margin: 40px 0 0 0;
@@ -1546,7 +1560,7 @@ aside div#user_meta ul li {
 }
 aside div#user_meta ul li a {
   padding: 5px 15px 5px 15px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -1555,13 +1569,25 @@ aside div#user_meta ul li a {
 }
 aside div#user_meta ul li a.nav_selected {
   padding: 5px 15px 5px 15px;
-  border: 3px solid #4d4d4d;
+  border: 2px solid #ffffff;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  background-color: #4d4d4d;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   text-transform: capitalize;
+}
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(68, 68, 68, 0.4);
+  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
+  z-index: 0;
+  color: white;
 }
 main header {
   padding: 15px 40px;
@@ -1697,9 +1723,9 @@ main div#ending_message {
   font-color: #eeeeee;
   font-size: 0.675em;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 960px) {
   aside {
-    width: 35%;
+    width: 30%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -1714,17 +1740,22 @@ main div#ending_message {
     display: block;
   }
   main {
-    width: 65%;
+    width: 70%;
     position: absolute;
     top: 0;
-    left: 35%;
+    left: 30%;
     overflow-x: hidden;
     overflow-y: hidden;
   }
   main article {
-    max-width: 65%;
+    max-width: 95%;
   }
   main header {
     border-top: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  aside {
+    position: relative;
   }
 }

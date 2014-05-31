@@ -40,12 +40,15 @@ hr {
 }
 
 aside {
-  background: url('../images/background-cover.jpg') top left no-repeat @dark-grey;
+  background: url('/theme/images/background-cover.jpg') top left no-repeat @dark-grey;
+  color: @white;
   div#user_meta {
-    font-family: serif;
+    position: relative;
+    z-index: 600;
+    font-family: @sans;
     padding: 40px;
     text-align: center;
-    
+         
     img {
       .border-radius(90px);
     }
@@ -72,6 +75,13 @@ aside {
     h2 {
       margin: 15px 0 5px 0;
       font-family: @serif;
+      font-weight: lighter;
+      color: @white;
+      a{
+        color: @white;        
+        text-decoration: none;                
+      }
+      font-size: 1.5em;
     }
     
     h1 {
@@ -81,7 +91,12 @@ aside {
 
     p {
       margin: 0 0 15px 0;
-      font-size: 0.75em;
+      font-size: 0.75em;      
+    }
+
+    p.tagline {
+        margin: 0 0 15px 0;
+        font-size: .9em;
     }
 
     ul {
@@ -96,7 +111,7 @@ aside {
 
         a {
           padding: 5px 15px 5px 15px;
-          border: 3px solid @white;
+          border: 2px solid @white;
           .border-radius(15px);
           color: @white;
           text-transform: capitalize;
@@ -104,15 +119,28 @@ aside {
         
        a.nav_selected {
           padding: 5px 15px 5px 15px;
-          border: 3px solid @dark-grey;
+          border: 2px solid @white;
           .border-radius(15px);
-          background-color: @dark-grey;
-          color: @white;
+          background-color: @white;
+          color: @black;
           text-transform: capitalize;
         } 
       }
     }
   }
+}
+
+.overlay {
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(68, 68, 68, 0.4);
+    background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
+    z-index:0;
+    color:white;
 }
 
 main {
@@ -273,9 +301,9 @@ main {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 960px) {
   aside {
-    width: 35%;
+    width: 30%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -298,10 +326,10 @@ main {
   }
 
   main {
-    width: 65%;
+    width: 70%;
     position: absolute;
     top: 0;
-    left: 35%;
+    left: 30%;
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -313,4 +341,10 @@ main {
       border-top: 0;
     }
   }
+}
+@media screen and (max-width: 960px) {
+  aside {
+    position: relative;
+  }
+
 }

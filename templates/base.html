@@ -42,7 +42,7 @@
         {% endif %}
       </a>
       <h2><a href="{{ SITEURL }}">{{ SITENAME }}</a></h2>
-      <p>{{ TAGLINE }}</p>
+      <p class="tagline">{{ TAGLINE }}</p>
       <div id="social_links">
 	<ul id="social_list">
 	{% for name, link in SOCIAL %}
@@ -66,6 +66,8 @@
         {% endfor %}
         <li><a {% if output_file == "archives.html" %}class="nav_selected"{% endif %} href="{{ SITEURL }}/archives.html">Archives</a></li>
        </ul>
+    </div>
+    <div class="overlay">
     </div>
   </aside>
 
