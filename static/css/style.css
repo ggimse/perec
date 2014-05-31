@@ -1646,6 +1646,8 @@ main article div#article_text blockquote {
   font-style: italic;
 }
 main article div#article_text img.align-center {
+  max-width: 800px;
+  max-height: 800px;
   display: block;
   margin-left: auto;
   margin-right: auto;
