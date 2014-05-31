@@ -1735,6 +1735,9 @@ main div#ending_message {
   aside h2 {
     margin: 10px 0 0 0;
   }
+  aside div#user_meta {
+    margin-top: 120px;
+  }
   aside div#user_meta ul li {
     margin-bottom: 26px;
     display: block;
