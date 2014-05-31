@@ -1,12 +1,14 @@
 # Perec
 
-Perec is an evolving modification of the [pelican-svbhack](https://github.com/giulivo/pelican-svbhack) theme for [Pelican](http://getpelican.com). It was built on the fly and is still rather rough in some areas.
+Perec is an evolving modification of the [pelican-svbhack](https://github.com/giulivo/pelican-svbhack) theme for [Pelican](http://getpelican.com) with influences from [uno](https://github.com/daleanthony/uno) which was written for [Ghost](http://www.ghost.org). 
 
-While you are welcome to look at my mess. This probably production ready.
+It was built on the fly and is still rather rough in some areas.
+
+You are welcome to look at my mess; however, this not production ready.
 
 ## DEMO Site
 
-You can view the theme on [Text and Hubris](http://www.textandhubris.com/).
+You can view the theme at [Text and Hubris](http://www.textandhubris.com/).
 
 ## LICENSE
 
