@@ -1903,7 +1903,7 @@ main footer a.button_accent:active {
   background-color: #000000;
 }
 main footer div#paginator {
-  max-width: 640px;
+  max-width: 100%;
 }
 main footer div#next_page_left {
   float: left;
