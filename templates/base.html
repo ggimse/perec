@@ -2,8 +2,6 @@
 <html lang="{{ DEFAULT_LANG }}">
 
 <head>
-  <!-- <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
-  <script src="{{ SITEURL }}/theme/js/less-1.3.3.min.js" type="text/javascript"></script> test -->
   <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
 
   <link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
@@ -84,10 +82,10 @@
       {% block header %}
 		<p><a href="{{ SITEURL }}">{{ SITENAME }}</a>
 		{% if FEED_ALL_ATOM %}
-        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="fa fa-rss"></i></a></li>
+        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="fa fa-rss"></i></a>
         {% endif %}
 		{% if FEED_ALL_RSS %}
-        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="RSS FEED"><i class="fa fa-rss"></a></li>
+        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="RSS FEED"><i class="fa fa-rss"></i></a>
         {% endif %}
           </p>
       {% endblock header %}
@@ -105,6 +103,5 @@
       <p>&copy Geoffrey Gimse. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme adapted from pelican-svbhack available on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>. Many of the images used on this site are in the Public Domain and available from <a href="http://openclipart.org" target="_blank">Openclipart</a>, others have been purchased for use via <a href="http://thenounproject.com/" target="_blank">The Noun Project</a> {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>{% endif %}.</p>
     </div>
   </main>
-  {% include "modules/idl.html" %}
 </body>
 </html>
