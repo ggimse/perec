@@ -2316,11 +2316,14 @@ main header {
 }
 main header p {
   margin-right: 100px;
-  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Raleway', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: right;
   color: #000000;
+}
+main header .readtime p {
+  font-size: 0.825em;
 }
 main article {
   max-width: 640px;
@@ -2445,6 +2448,11 @@ main div#ending_message {
   font-color: #eeeeee;
   font-size: 0.675em;
 }
+@media screen and (max-width: 960px) {
+  aside {
+    position: relative;
+  }
+}
 @media screen and (min-width: 960px) {
   aside {
     width: 30%;
@@ -2477,10 +2485,5 @@ main div#ending_message {
   }
   main header {
     border-top: 0;
-  }
-}
-@media screen and (max-width: 960px) {
-  aside {
-    position: relative;
   }
 }

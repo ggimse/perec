@@ -151,12 +151,20 @@ main {
 
     p {
       margin-right: 100px;
-      font-family: @serif;
+      font-family: @sans;
       font-weight: bold;
       text-transform: uppercase;
       text-align: right;
       color: @black
      }
+
+  .readtime {
+
+    p {
+      font-size: .825em
+      }
+
+    }
   }
 
   article {
@@ -303,6 +311,12 @@ main {
   }
 }
 
+@media screen and (max-width: 960px) {
+  aside {
+    position: relative;
+  }
+}
+
 @media screen and (min-width: 960px) {
   aside {
     width: 30%;
@@ -344,10 +358,4 @@ main {
       border-top: 0;
     }
   }
-}
-@media screen and (max-width: 960px) {
-  aside {
-    position: relative;
-  }
-
 }

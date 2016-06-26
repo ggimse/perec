@@ -4,9 +4,15 @@
 {% endblock %}
 
 {% block title %}{{ article.title|striptags }}{% endblock %}
-
 {% block header %}
 <p>Posted on {{ article.locale_date }}</p>
+{% if READ_TIME_ENABLED == "True" %}
+<div class="readtime">
+<p>
+  Read Time: {{ article.stats['read_mins'] }} minutes
+</p>
+</div>
+{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -14,11 +20,12 @@
   <div id="article_title">
     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   </div>
+
   <div id="article_text">
     {{ article.content }}
   </div>
   <div id="article_meta">
-  	<p>Author: <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></p>
+    <p>Author: <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></p>
     <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
     {% if article.tags %}
     <p>Tags:
