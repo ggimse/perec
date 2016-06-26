@@ -4,7 +4,7 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import "http://fonts.googleapis.com/css?family=Raleway:400,700|EB+Garamond)";
+@import "http://fonts.googleapis.com/css?family=Exo+2|EB+Garamond)";
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -2203,7 +2203,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   color: #4d4d4d;
-  font-family: 'Raleway', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
+  font-family: 'Exo 2', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
   font-size: 1.125em;
 }
 a {
@@ -2223,7 +2223,7 @@ aside {
 aside div#user_meta {
   position: relative;
   z-index: 600;
-  font-family: 'Raleway', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
+  font-family: 'Exo 2', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
   padding: 40px;
   text-align: center;
 }
