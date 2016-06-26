@@ -4,7 +4,7 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import "http://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)";
+@import "http://fonts.googleapis.com/css?family=Raleway:400,700|EB+Garamond)";
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -2247,7 +2247,7 @@ aside div#user_meta div#social_links ul li a {
 }
 aside div#user_meta h2 {
   margin: 15px 0 5px 0;
-  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
   font-weight: lighter;
   color: #ffffff;
   font-size: 1.5em;
@@ -2257,7 +2257,7 @@ aside div#user_meta h2 a {
   text-decoration: none;
 }
 aside div#user_meta h1 {
-  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
   font-size: 1.625em;
 }
 aside div#user_meta p {
@@ -2316,7 +2316,7 @@ main header {
 }
 main header p {
   margin-right: 100px;
-  font-family: 'Raleway', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
+  font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: right;
@@ -2331,7 +2331,7 @@ main article {
 }
 main article div#article_text {
   line-height: 1.375em;
-  font-family: 'Roboto Slab', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
 }
 main article div#article_text h2 {
   font-size: 1.4em;
