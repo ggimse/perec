@@ -38,7 +38,9 @@ hr {
 }
 
 aside {
-  background: url('/theme/images/background-cover.jpg') top left no-repeat @dark-grey;
+  // background: url('/theme/images/background-cover.jpg') top left no-repeat @dark-grey;
+  background-color:rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
   color: @white;
   div#user_meta {
     position: relative;
@@ -316,7 +318,7 @@ main {
 
 @media screen and (min-width: 960px) {
   aside {
-    width: 30%;
+    width: 20%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -336,14 +338,20 @@ main {
           display: block;
         }
       }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
     }
   }
 
   main {
-    width: 70%;
+    width: 50%;
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 20%;
     overflow-x: hidden;
     overflow-y: hidden;
 
