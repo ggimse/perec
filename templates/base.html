@@ -56,28 +56,31 @@
       <h2><a href="{{ SITEURL }}">{{ SITENAME }}</a></h2>
       <p class="tagline">{{ TAGLINE }}</p>
       <div id="social_links">
-	<ul id="social_list">
-	{% for name, link in SOCIAL %}
-        <li><a href="{{ link }}" rel='me' target="_blank"><i class="fa fa-{{ name }} fa-2x"></i></a></li>
-        {% endfor %}
-	</ul>
+	       <ul id="social_list">
+	          {% for name, link in SOCIAL %}
+            <li><a class="social" href="{{ link }}" rel='me' target="_blank"><i class="fa fa-{{ name }} fa-2x"></i></a></li>
+            {% endfor %}
+	         </ul>
       </div>
-      <ul>
-        {% for title, link in MENUITEMS %}
-        <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
-        <li><a {% if p == page %}class="nav_selected"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-        {% endfor %}{% endif %}
-        {% if DISPLAY_CATEGORIES_ON_MENU -%}
-        {% for cat, null in categories %}
-        <li><a {% if cat == category %}class="nav_selected"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-        {% endfor %}{% endif %}
-        {% for name, link in LINKS %}
-        <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
-        {% endfor %}
-        <li><a {% if output_file == "archives.html" %}class="nav_selected"{% endif %} href="{{ SITEURL }}/archives.html">Archives</a></li>
-       </ul>
+      <div id="menu">
+        <ul>
+          {% for title, link in MENUITEMS %}
+          <li><a href="{{ link }}">{{ title }}</a></li>
+          {% endfor %}
+          {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
+          <li><a {% if p == page %}class="nav_selected"{% endif %} href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}{% endif %}
+          {% if DISPLAY_CATEGORIES_ON_MENU -%}
+          {% for cat, null in categories %}
+          <li><a {% if cat == category %}class="nav_selected"{% endif %} href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+          {% endfor %}{% endif %}
+          {% for name, link in LINKS %}
+          <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+          {% endfor %}
+          <li><a {% if output_file == "archives.html" %}class="nav_selected"{% endif %} href="{{ SITEURL }}/archives.html">Archives</a></li>
+         </ul>
+      </div>
+      
     </div>
     <!-- <div class="overlay">
     </div> -->

@@ -35,6 +35,7 @@ aside div#user_meta img {
 }
 aside div#user_meta div#social_links ul {
   margin: 0px 5px 40px;
+  padding: 0;
   list-style-type: none;
 }
 aside div#user_meta div#social_links ul li {
@@ -69,17 +70,16 @@ aside div#user_meta p.tagline {
   margin: 0 0 15px 0;
   font-size: .9em;
 }
-aside div#user_meta ul {
+aside div#user_meta div#menu ul {
   margin: 40px 0 0 0;
   padding-left: 0;
   font-size: 0.875em;
   list-style-type: none;
 }
-aside div#user_meta ul li {
+aside div#user_meta div#menu ul li {
   margin-right: 5px;
-  display: inline;
 }
-aside div#user_meta ul li a {
+aside div#user_meta div#menu ul li a {
   padding: 5px 15px 5px 15px;
   border: 2px solid #ffffff;
   border-radius: 15px;
@@ -88,7 +88,15 @@ aside div#user_meta ul li a {
   color: #ffffff;
   text-transform: capitalize;
 }
-aside div#user_meta ul li a.nav_selected {
+aside div#user_meta div#menu ul li a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+aside div#user_meta div#menu ul li a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+aside div#user_meta div#menu ul li a.nav_selected {
   padding: 5px 15px 5px 15px;
   border: 2px solid #ffffff;
   border-radius: 15px;
@@ -251,6 +259,9 @@ main div#ending_message {
 @media screen and (max-width: 960px) {
   aside {
     position: relative;
+  }
+  div#menu ul li {
+    display: inline;
   }
 }
 @media screen and (min-width: 960px) {

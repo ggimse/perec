@@ -56,7 +56,8 @@ aside {
     div#social_links {
        ul {
          margin: 0px 5px 40px;
-	 list-style-type: none;
+         padding: 0;
+	       list-style-type: none;
 
          li {
            display: inline;
@@ -98,32 +99,41 @@ aside {
         margin: 0 0 15px 0;
         font-size: .9em;
     }
+    div#menu {
+      ul {
+        margin: 40px 0 0 0;
+        padding-left: 0;
+        font-size: 0.875em;
+        list-style-type: none;
 
-    ul {
-      margin: 40px 0 0 0;
-      padding-left: 0;
-      font-size: 0.875em;
-      list-style-type: none;
+        li {
+          margin-right: 5px;
 
-      li {
-        margin-right: 5px;
-        display: inline;
+          a {
+            padding: 5px 15px 5px 15px;
+            border: 2px solid @white;
+            .border-radius(15px);
+            color: @white;
+            text-transform: capitalize;
+            &:hover {
+              color: @accent;
+              background-color: @white;
+            }
+            &:active {
+              color: @accent;
+              background-color: @white;
+            }
+          }
 
-        a {
-          padding: 5px 15px 5px 15px;
-          border: 2px solid @white;
-          .border-radius(15px);
-          color: @white;
-          text-transform: capitalize;
-        }
 
-       a.nav_selected {
-          padding: 5px 15px 5px 15px;
-          border: 2px solid @white;
-          .border-radius(15px);
-          background-color: @white;
-          color: @black;
-          text-transform: capitalize;
+         a.nav_selected {
+            padding: 5px 15px 5px 15px;
+            border: 2px solid @white;
+            .border-radius(15px);
+            background-color: @white;
+            color: @black;
+            text-transform: capitalize;
+          }
         }
       }
     }
@@ -314,6 +324,14 @@ main {
   aside {
     position: relative;
   }
+  div#menu {
+    ul {
+      li {
+        display: inline;
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width: 960px) {
