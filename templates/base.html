@@ -5,9 +5,9 @@
   <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
   <link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Exo+2|EB+Garamond">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
 
 
   <meta charset="utf-8">
@@ -26,9 +26,7 @@
 
   <link rel="shortcut icon" href="/theme/images/favicon.ico" type="image/x-icon" />
 
-  {% if FONT_AWESOME_CDN %}
-  <script src={{ FONT_AWESOME_CDN }}></script>
-  {% endif %}
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-TXfwrfuHVznxCssTxWoPZjhcss/hp38gEOH8UPZG/JcXonvBQ6SlsIF49wUzsGno" crossorigin="anonymous">
 
   {% if FEED_ALL_ATOM %}
   <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -62,7 +60,7 @@
       <div id="social_links">
 	       <ul id="social_list">
 	          {% for name, link in SOCIAL %}
-            <li><a class="social" href="{{ link }}" rel='me' target="_blank"><i class="fa fa-{{ name }} fa-2x"></i></a></li>
+            <li><a class="social" href="{{ link }}" rel='me' target="_blank"><i class="fab fa-{{ name }}"></i></a></li>
             {% endfor %}
 	         </ul>
       </div>
@@ -95,10 +93,10 @@
       {% block header %}
 		<p><a href="{{ SITEURL }}">{{ SITENAME }}</a>
 		{% if FEED_ALL_ATOM %}
-        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="fa fa-rss"></i></a>
+        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="ATOM FEED"><i class="fas fa-rss"></i></a>
         {% endif %}
 		{% if FEED_ALL_RSS %}
-        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="RSS FEED"><i class="fa fa-rss"></i></a>
+        	&#124; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" title="RSS FEED"><i class="fas fa-rss"></i></a>
         {% endif %}
           </p>
       {% endblock header %}
@@ -113,7 +111,8 @@
     </footer>
 
     <div id="ending_message">
-      <p>&copy Geoffrey Gimse. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme adapted from pelican-svbhack available on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>. Many of the images used on this site are in the Public Domain and available from <a href="http://openclipart.org" target="_blank">Openclipart</a>, others have been purchased for use via <a href="http://thenounproject.com/" target="_blank">The Noun Project</a> {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>{% endif %}.</p>
+      <p>&copy Geoffrey Gimse. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme adapted from pelican-svbhack available on <a href="https://github.com/giulivo/pelican-svbhack" target="_blank">github</a>. Many of the images used on this site are in the Public Domain and available from <a href="http://openclipart.org" target="_blank">Openclipart</a>, others have been purchased for use via <a href="http://thenounproject.com/" target="_blank">The Noun Project</a>.
+     </p>
     </div>
   </main>
 </body>

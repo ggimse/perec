@@ -1,24 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #34495e;
   color: #4d4d4d;
   font-family: 'Exo 2', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
   font-size: 1.125em;
 }
 a {
-  color: #000000;
+  color: #dddddd;
   text-decoration: none;
 }
 hr {
-  color: #eeeeee;
-  background-color: #eeeeee;
+  color: #dddddd;
+  background-color: #dddddd;
   height: 1px;
   border: none;
 }
 aside {
-  background-color: rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
+  background-color: #34495e;
   color: #ffffff;
 }
 aside div#user_meta {
@@ -45,7 +44,7 @@ aside div#user_meta div#social_links ul li {
 aside div#user_meta div#social_links ul li a {
   color: #ffffff;
   border: 0px;
-  padding: 5px 0px;
+  padding: 5px 2px;
 }
 aside div#user_meta h2 {
   margin: 15px 0 5px 0;
@@ -119,16 +118,14 @@ aside div#user_meta div#menu ul li a.nav_selected {
   color: white;
 }
 main header {
-  padding: 15px 40px;
-  border-top: #eeeeee 1px solid;
-  border-bottom: #eeeeee 1px solid;
+  padding: 5px 40px;
 }
 main header p {
   font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: right;
-  color: #000000;
+  color: #dddddd;
 }
 main header .readtime p {
   font-size: 0.825em;
@@ -136,8 +133,20 @@ main header .readtime p {
 main article {
   max-width: 640px;
   padding: 40px;
+  background-color: #ffffff;
+  margin: 2em auto auto auto;
+  border-radius: 25px;
+}
+main article a {
+  color: #000000;
+}
+main article div#article_title {
+  margin: auto;
+  width: 85%;
 }
 main article div#article_text {
+  margin: auto;
+  width: 85%;
   line-height: 1.375em;
   font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
 }
@@ -157,7 +166,7 @@ main article div#article_text code {
   color: #000000;
   font-size: 0.75em;
   font-family: 'PT Mono', monospace;
-  background: #eeeeee;
+  background: #dddddd;
 }
 main article div#article_text pre {
   margin: 22px 2px 22px 2px;
@@ -166,7 +175,7 @@ main article div#article_text pre {
   border-left: 3px solid #000000;
   font-size: 0.75em;
   font-family: 'PT Mono', monospace;
-  background: #eeeeee;
+  background: #dddddd;
   line-height: 1.125em;
   overflow-x: auto;
 }
@@ -218,27 +227,26 @@ main article div.footnote {
   font-size: 0.625em;
 }
 main footer {
-  border-top: #eeeeee 1px solid;
-  border-bottom: #eeeeee 1px solid;
+  border-bottom: #dddddd 1px solid;
   padding: 40px;
 }
 main footer a.button_accent {
   padding: 2px 10px;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   text-transform: uppercase;
-  color: #000000;
   font-size: .75em;
+  color: #ffffff;
 }
 main footer a.button_accent:hover {
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 main footer a.button_accent:active {
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 main footer div#paginator {
   max-width: 100%;
@@ -253,8 +261,14 @@ main footer div#next_page_right {
 }
 main div#ending_message {
   padding: 0 40px 0 40px;
-  font-color: #eeeeee;
+  color: #dddddd;
   font-size: 0.675em;
+}
+main div#ending_message a:hover {
+  color: #ffffff;
+}
+main div#ending_message a:active {
+  color: #ffffff;
 }
 @media screen and (max-width: 960px) {
   aside {
@@ -271,7 +285,6 @@ main div#ending_message {
     position: fixed;
     top: 0;
     left: 0;
-    border-right: #eeeeee 1px solid;
   }
   aside h2 {
     margin: 10px 0 0 0;
