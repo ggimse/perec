@@ -142,6 +142,7 @@ aside {
   }
 }
 
+/**
 .overlay {
     display: block;
     position:absolute;
@@ -155,6 +156,7 @@ aside {
     color:white;
 }
 
+*/
 main {
   header {
     padding: 5px 40px;
@@ -179,13 +181,12 @@ main {
   }
 
   article {
-    max-width: 640px;
+    //max-width: 640px;
     padding: 40px;
     background-color: @white;
     margin: 2em auto auto auto;
     border-radius: 25px;
-
-
+    
     a {
       color: @black;
     }
@@ -286,6 +287,44 @@ main {
 
     div.footnote {
       font-size: 0.625em;
+    }
+
+  }
+
+  div.photo {
+    background-color: @muted-blue;
+    border-radius: 25px;
+    position: relative;
+    margin: 2em auto auto auto;
+    color: @white;
+    font-family: @serif;
+    font-style: none;
+    font-weight: 300;
+
+    div#article_title {
+      margin-top: 61%;
+      font-size: 1.25em;
+      margin-left: 3em;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 25px;
+    }
+
+    div.post-overlay {
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 25px;
+      
+      &:hover {
+       background-color: rgba(0,0,0,.65);
+      }
+
     }
 
   }
