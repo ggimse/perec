@@ -239,7 +239,7 @@ main div.photo {
   font-weight: 300;
 }
 main div.photo div#article_title {
-  margin-top: 61%;
+  margin-top: 2em;
   font-size: 1.25em;
   margin-left: 3em;
 }
@@ -306,6 +306,12 @@ main div#ending_message a:active {
 @media screen and (max-width: 960px) {
   aside {
     position: relative;
+  }
+  article {
+    margin: 2em 2em auto 2em !important;
+  }
+  div.photo {
+    margin: 2em 2em auto 2em !important;
   }
   div#menu ul li {
     display: inline;
