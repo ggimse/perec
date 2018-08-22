@@ -286,11 +286,11 @@ main footer div#paginator {
 }
 main footer div#next_page_left {
   float: left;
-  width: 8.5em;
+  width: 7em;
 }
 main footer div#next_page_right {
   float: right;
-  width: 8.5em;
+  width: 7em;
 }
 main div#ending_message {
   padding: 0 40px 0 40px;
@@ -303,7 +303,22 @@ main div#ending_message a:hover {
 main div#ending_message a:active {
   color: #ffffff;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 470px) {
+  aside {
+    position: relative;
+  }
+  article {
+    margin: 2em 2em auto 2em !important;
+  }
+  div.photo {
+    margin: 2em 2em auto 2em !important;
+  }
+  div#menu ul li {
+    display: block;
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 470px) {
   aside {
     position: relative;
   }
