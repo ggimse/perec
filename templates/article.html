@@ -18,6 +18,9 @@
 {% block content %}
 <article>
   <div id="article_title">
+    {% if article.coverimage %}
+      <img src={{article.coverimage}} class="cover-image" />
+    {% endif %}
     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   </div>
 

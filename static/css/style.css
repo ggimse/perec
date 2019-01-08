@@ -142,6 +142,10 @@ main article {
 main article a {
   color: #000000;
 }
+main article img.cover-image {
+  width: 100%;
+  border-radius: 25px;
+}
 main article div#article_title {
   margin: auto;
   width: 85%;
@@ -159,7 +163,7 @@ main article div#article_text a {
   text-decoration: underline;
 }
 main article div#article_text a.footnote-ref {
-  font-size: 0.625em;
+  font-size: 0.85em;
   text-decoration: none;
 }
 main article div#article_text code {
@@ -226,7 +230,7 @@ main article div#article_more a.button_more:active {
   background-color: #000000;
 }
 main article div.footnote {
-  font-size: 0.625em;
+  font-size: 0.85em;
 }
 main div.photo {
   background-color: #34495e;
