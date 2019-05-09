@@ -1,5 +1,9 @@
 # CHANGELOG
 
+2019-05-09
+
+- Set max-width for img content in article.text.
+
 2019-01-07:
 
 - Increased footnote size to .85em
