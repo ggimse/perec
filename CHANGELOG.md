@@ -1,5 +1,9 @@
 # CHANGELOG
 
+2019-07-24
+
+- Increased width of the main container by 10%
+  
 2019-05-09
 
 - Set max-width for img content in article.text.
@@ -22,4 +26,3 @@
 
 - Added this changelog because it was needed.
 - Added a catch for aside content that posts the full content and drops the more symbol. 
-
