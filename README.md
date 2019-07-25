@@ -1,10 +1,10 @@
 # Perec
 
-Perec is an evolving modification of the [pelican-svbhack](https://github.com/giulivo/pelican-svbhack) theme for [Pelican](http://getpelican.com) with influences from [uno](https://github.com/daleanthony/uno) which was written for [Ghost](http://www.ghost.org). 
+Perec is an evolving modification of the [pelican-svbhack](https://github.com/giulivo/pelican-svbhack) theme for [Pelican](http://getpelican.com) with influences from [Eston Theme by mikedidthis](https://themeforest.net/item/eston-a-simple-notebook-theme/9497657) which was written for [Ghost](http://www.ghost.org).
 
-It was built on the fly and is still rather rough in some areas.
+It has designed for my site and still rather rough in some areas.
 
-You are welcome to look at my mess; however, this not production ready.
+You are welcome to look at my mess; however, this not roll-out ready.
 
 ## DEMO Site
 

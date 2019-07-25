@@ -1,7 +1,8 @@
 @red:  #ff0000;
 @black:  #000000;
 @white:  #ffffff;
-@light-grey:  #eeeeee;
+@muted-blue: #34495e;
+@light-grey:  #dddddd;
 @med-grey:  #999999;
 @dark-grey:  #4d4d4d;
 @blue:  #0e94ec;
@@ -13,14 +14,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: @white;
+  background-color: @muted-blue;
   color: @dark-grey;
   font-family: @sans;
   font-size: 1.125em;
 }
 
 a {
-  color: @black;
+  color: @light-grey;
   text-decoration: none;
 }
 
@@ -39,8 +40,9 @@ hr {
 
 aside {
   // background: url('/theme/images/background-cover.jpg') top left no-repeat @dark-grey;
-  background-color:rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
+  // background-color:rgba(0, 0, 0, 0.4);  
+  // background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
+  background-color: @muted-blue;
   color: @white;
   div#user_meta {
     position: relative;
@@ -66,7 +68,7 @@ aside {
            a {
             color: @white;
             border: 0px;
-            padding: 5px 0px;
+            padding: 5px 2px;
 
            }
          }
@@ -140,6 +142,7 @@ aside {
   }
 }
 
+/**
 .overlay {
     display: block;
     position:absolute;
@@ -153,18 +156,19 @@ aside {
     color:white;
 }
 
+*/
 main {
   header {
-    padding: 15px 40px;
-    border-top: @light-grey 1px solid;
-    border-bottom: @light-grey 1px solid;
+    padding: 5px 40px;
+    //border-top: @light-grey 1px solid;
+    //border-bottom: @light-grey 1px solid;
 
     p {
       font-family: @serif;
       font-weight: bold;
       text-transform: uppercase;
       text-align: right;
-      color: @black
+      color: @light-grey;
      }
 
   .readtime {
@@ -177,13 +181,29 @@ main {
   }
 
   article {
-    max-width: 640px;
+    //max-width: 640px;
     padding: 40px;
+    background-color: @white;
+    margin: 2em auto auto auto;
+    border-radius: 25px;
+    
+    a {
+      color: @black;
+    }
+
+    img.cover-image {
+      width: 100%;
+      border-radius: 25px;
+    }
 
     div#article_title {
+      margin: auto;
+      width: 85%;
       }
 
     div#article_text {
+      margin: auto;
+      width: 85%;
       line-height: 1.375em;
       font-family: @serif;
 
@@ -195,7 +215,7 @@ main {
       }
 
       a.footnote-ref {
-        font-size: 0.625em;
+        font-size: 0.85em;
         text-decoration: none;
       }
 
@@ -227,9 +247,13 @@ main {
         font-style: italic;
       }
 
+      img {
+        max-width: 100%;
+      }
+
       img.align-center {
-        max-width: 800px;
-        max-height: 800px;
+        max-width: 100%;
+        max-height: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -271,30 +295,68 @@ main {
    }
 
     div.footnote {
-      font-size: 0.625em;
+      font-size: 0.85em;
+    }
+
+  }
+
+  div.photo {
+    background-color: @muted-blue;
+    border-radius: 25px;
+    position: relative;
+    margin: 2em auto auto auto;
+    color: @white;
+    font-family: @serif;
+    font-style: none;
+    font-weight: 300;
+
+    div#article_title {
+      margin-top: 2em;
+      font-size: 1.25em;
+      margin-left: 3em;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 25px;
+    }
+
+    div.post-overlay {
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 25px;
+      
+     &:hover {
+       background-color: rgba(0,0,0,.65);
+      } 
+
     }
 
   }
 
   footer {
-    border-top: @light-grey 1px solid;
+   // border-top: @light-grey 1px solid;
     border-bottom: @light-grey 1px solid;
     padding: 40px;
 
     a.button_accent {
       padding: 2px 10px;
-      border: 2px solid @accent;
+      border: 2px solid @white;
       .border-radius(20px);
       text-transform: uppercase;
-      color: @accent;
       font-size: .75em;
+      color: @white;
       &:hover {
-        color: @white;
-        background-color: @accent;
+        color: @accent;
+        background-color: @white;
       }
       &:active {
-        color: @white;
-        background-color: @accent;
+        color: @accent;
+        background-color: @white;
       }
     }
 
@@ -304,26 +366,75 @@ main {
 
     div#next_page_left {
       float: left;
-      width: 8.5em;
+      width: 7em;
     }
 
    div#next_page_right {
      float: right;
-     width: 8.5em;
+     width: 7em;
    }
   }
 
   div#ending_message {
     padding: 0 40px 0 40px;
-    font-color: @light-grey;
+    color: @light-grey;
     font-size: 0.675em;
+    a {
+      &:hover {
+        color: @white;
+        //background-color: @white;
+      }
+      &:active {
+        color: @white;
+        //background-color: @white;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 470px) {
   aside {
     position: relative;
   }
+
+  article {
+    margin: 2em 2em auto 2em !important;
+    width: auto;
+
+    div#article_title { 
+      width: auto;
+    }
+  }
+  
+  div.photo {
+    margin: 2em 2em auto 2em !important;
+  }
+
+  div#menu {
+    ul {
+      li {
+        display: block;
+        margin-top: 2em;
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 960px) and (min-width: 470px) {
+  aside {
+    position: relative;
+  }
+
+  article {
+    margin: 2em 2em auto 2em !important;
+  }
+  
+  div.photo {
+    margin: 2em 2em auto 2em !important;
+  }
+
   div#menu {
     ul {
       li {
@@ -341,7 +452,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    border-right: @light-grey 1px solid;
+    //border-right: @light-grey 1px solid;
 
     h2 {
       margin: 10px 0 0 0;
@@ -366,7 +477,7 @@ main {
   }
 
   main {
-    width: 50%;
+    width: 60%;
     position: absolute;
     top: 0;
     left: 20%;

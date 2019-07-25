@@ -1,24 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #34495e;
   color: #4d4d4d;
   font-family: 'Exo 2', 'Lucida Grande', 'Lucida Sans Unicode', verdana, sans-serif;
   font-size: 1.125em;
 }
 a {
-  color: #000000;
+  color: #dddddd;
   text-decoration: none;
 }
 hr {
-  color: #eeeeee;
-  background-color: #eeeeee;
+  color: #dddddd;
+  background-color: #dddddd;
   height: 1px;
   border: none;
 }
 aside {
-  background-color: rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
+  background-color: #34495e;
   color: #ffffff;
 }
 aside div#user_meta {
@@ -45,7 +44,7 @@ aside div#user_meta div#social_links ul li {
 aside div#user_meta div#social_links ul li a {
   color: #ffffff;
   border: 0px;
-  padding: 5px 0px;
+  padding: 5px 2px;
 }
 aside div#user_meta h2 {
   margin: 15px 0 5px 0;
@@ -68,7 +67,7 @@ aside div#user_meta p {
 }
 aside div#user_meta p.tagline {
   margin: 0 0 15px 0;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 aside div#user_meta div#menu ul {
   margin: 40px 0 0 0;
@@ -106,38 +105,54 @@ aside div#user_meta div#menu ul li a.nav_selected {
   color: #000000;
   text-transform: capitalize;
 }
+/**
 .overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(68, 68, 68, 0.4);
-  background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
-  z-index: 0;
-  color: white;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(68, 68, 68, 0.4);
+    background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.7));
+    z-index:0;
+    color:white;
 }
+
+*/
 main header {
-  padding: 15px 40px;
-  border-top: #eeeeee 1px solid;
-  border-bottom: #eeeeee 1px solid;
+  padding: 5px 40px;
 }
 main header p {
   font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: right;
-  color: #000000;
+  color: #dddddd;
 }
 main header .readtime p {
   font-size: 0.825em;
 }
 main article {
-  max-width: 640px;
   padding: 40px;
+  background-color: #ffffff;
+  margin: 2em auto auto auto;
+  border-radius: 25px;
+}
+main article a {
+  color: #000000;
+}
+main article img.cover-image {
+  width: 100%;
+  border-radius: 25px;
+}
+main article div#article_title {
+  margin: auto;
+  width: 85%;
 }
 main article div#article_text {
+  margin: auto;
+  width: 85%;
   line-height: 1.375em;
   font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
 }
@@ -148,7 +163,7 @@ main article div#article_text a {
   text-decoration: underline;
 }
 main article div#article_text a.footnote-ref {
-  font-size: 0.625em;
+  font-size: 0.85em;
   text-decoration: none;
 }
 main article div#article_text code {
@@ -157,7 +172,7 @@ main article div#article_text code {
   color: #000000;
   font-size: 0.75em;
   font-family: 'PT Mono', monospace;
-  background: #eeeeee;
+  background: #dddddd;
 }
 main article div#article_text pre {
   margin: 22px 2px 22px 2px;
@@ -166,7 +181,7 @@ main article div#article_text pre {
   border-left: 3px solid #000000;
   font-size: 0.75em;
   font-family: 'PT Mono', monospace;
-  background: #eeeeee;
+  background: #dddddd;
   line-height: 1.125em;
   overflow-x: auto;
 }
@@ -176,9 +191,12 @@ main article div#article_text blockquote {
   color: #999999;
   font-style: italic;
 }
+main article div#article_text img {
+  max-width: 100%;
+}
 main article div#article_text img.align-center {
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -204,7 +222,7 @@ main article div#article_more a.button_more {
   -webkit-border-radius: 20px;
   text-transform: uppercase;
   color: #000000;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 main article div#article_more a.button_more:hover {
   color: #ffffff;
@@ -215,50 +233,111 @@ main article div#article_more a.button_more:active {
   background-color: #000000;
 }
 main article div.footnote {
-  font-size: 0.625em;
+  font-size: 0.85em;
+}
+main div.photo {
+  background-color: #34495e;
+  border-radius: 25px;
+  position: relative;
+  margin: 2em auto auto auto;
+  color: #ffffff;
+  font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  font-style: none;
+  font-weight: 300;
+}
+main div.photo div#article_title {
+  margin-top: 2em;
+  font-size: 1.25em;
+  margin-left: 3em;
+}
+main div.photo img {
+  width: 100%;
+  border-radius: 25px;
+}
+main div.photo div.post-overlay {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+}
+main div.photo div.post-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.65);
 }
 main footer {
-  border-top: #eeeeee 1px solid;
-  border-bottom: #eeeeee 1px solid;
+  border-bottom: #dddddd 1px solid;
   padding: 40px;
 }
 main footer a.button_accent {
   padding: 2px 10px;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   text-transform: uppercase;
-  color: #000000;
-  font-size: .75em;
+  font-size: 0.75em;
+  color: #ffffff;
 }
 main footer a.button_accent:hover {
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 main footer a.button_accent:active {
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 main footer div#paginator {
   max-width: 100%;
 }
 main footer div#next_page_left {
   float: left;
-  width: 8.5em;
+  width: 7em;
 }
 main footer div#next_page_right {
   float: right;
-  width: 8.5em;
+  width: 7em;
 }
 main div#ending_message {
   padding: 0 40px 0 40px;
-  font-color: #eeeeee;
+  color: #dddddd;
   font-size: 0.675em;
 }
-@media screen and (max-width: 960px) {
+main div#ending_message a:hover {
+  color: #ffffff;
+}
+main div#ending_message a:active {
+  color: #ffffff;
+}
+@media screen and (max-width: 470px) {
   aside {
     position: relative;
+  }
+  article {
+    margin: 2em 2em auto 2em !important;
+    width: auto;
+  }
+  article div#article_title {
+    width: auto;
+  }
+  div.photo {
+    margin: 2em 2em auto 2em !important;
+  }
+  div#menu ul li {
+    display: block;
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 470px) {
+  aside {
+    position: relative;
+  }
+  article {
+    margin: 2em 2em auto 2em !important;
+  }
+  div.photo {
+    margin: 2em 2em auto 2em !important;
   }
   div#menu ul li {
     display: inline;
@@ -271,7 +350,6 @@ main div#ending_message {
     position: fixed;
     top: 0;
     left: 0;
-    border-right: #eeeeee 1px solid;
   }
   aside h2 {
     margin: 10px 0 0 0;
@@ -288,7 +366,7 @@ main div#ending_message {
     height: auto;
   }
   main {
-    width: 50%;
+    width: 60%;
     position: absolute;
     top: 0;
     left: 20%;
