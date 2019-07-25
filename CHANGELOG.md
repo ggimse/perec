@@ -3,6 +3,7 @@
 2019-07-24
 
 - Increased width of the main container by 10%
+- Merged changes into master (finally)
   
 2019-05-09
 
