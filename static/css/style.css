@@ -67,7 +67,7 @@ aside div#user_meta p {
 }
 aside div#user_meta p.tagline {
   margin: 0 0 15px 0;
-  font-size: 0.9em;
+  font-size: .9em;
 }
 aside div#user_meta div#menu ul {
   margin: 40px 0 0 0;
@@ -222,7 +222,7 @@ main article div#article_more a.button_more {
   -webkit-border-radius: 20px;
   text-transform: uppercase;
   color: #000000;
-  font-size: 0.75em;
+  font-size: .75em;
 }
 main article div#article_more a.button_more:hover {
   color: #ffffff;
@@ -264,7 +264,7 @@ main div.photo div.post-overlay {
   border-radius: 25px;
 }
 main div.photo div.post-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 main footer {
   border-bottom: #dddddd 1px solid;
@@ -277,7 +277,7 @@ main footer a.button_accent {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   text-transform: uppercase;
-  font-size: 0.75em;
+  font-size: .75em;
   color: #ffffff;
 }
 main footer a.button_accent:hover {
