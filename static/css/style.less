@@ -254,6 +254,7 @@ main {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        .border-radius(12px);
       }
 
       img.align-center {
@@ -262,6 +263,7 @@ main {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        .border-radius(12px);
       }
 
       div.align-right {
@@ -278,7 +280,34 @@ main {
       color: @med-grey;
     }
 
-   div#article_more {
+    div#article_contact {
+      margin: 2em auto auto auto;
+      width: 65%;
+      font-size: .9em;
+      font-family: @serif;
+      border: 2px solid @dark-grey;
+      border-radius: 12px;
+      background-color: @light-grey;
+      padding: 5px;
+      filter: drop-shadow(0 0 0.55rem @dark-grey);
+
+      h2 {
+        font-size: 1.125em;
+      }
+
+      p {
+        padding:10px;
+        font-size: .9em;
+      }
+
+      a {
+        color: @dark-grey;
+        text-decoration: underline;
+      }
+    
+    }
+
+    div#article_more {
      text-align: right;
 
      a.button_more {

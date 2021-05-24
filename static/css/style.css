@@ -197,6 +197,9 @@ main article div#article_text img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
 }
 main article div#article_text img.align-center {
   max-width: 100%;
@@ -204,6 +207,9 @@ main article div#article_text img.align-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
 }
 main article div#article_text div.align-right {
   float: right;
@@ -214,6 +220,28 @@ main article div#article_text div.align-left {
 main article div#article_meta {
   font-size: 0.625em;
   color: #999999;
+}
+main article div#article_contact {
+  margin: 2em auto auto auto;
+  width: 65%;
+  font-size: 0.9em;
+  font-family: 'EB Garamond', 'Hoefler Text', 'Cambria', Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid #4d4d4d;
+  border-radius: 12px;
+  background-color: #dddddd;
+  padding: 5px;
+  filter: drop-shadow(0 0 0.55rem #4d4d4d);
+}
+main article div#article_contact h2 {
+  font-size: 1.125em;
+}
+main article div#article_contact p {
+  padding: 10px;
+  font-size: 0.9em;
+}
+main article div#article_contact a {
+  color: #4d4d4d;
+  text-decoration: underline;
 }
 main article div#article_more {
   text-align: right;
